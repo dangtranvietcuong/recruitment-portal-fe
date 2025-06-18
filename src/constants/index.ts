@@ -101,90 +101,89 @@ export const API_ENDPOINTS = {
 
 // Label mappings - using enum values
 export const JOB_TYPE_LABELS = {
-  [JobType.FULL_TIME]: 'Toàn thời gian',
-  [JobType.PART_TIME]: 'Bán thời gian',
-  [JobType.CONTRACT]: 'Hợp đồng',
-  [JobType.INTERNSHIP]: 'Thực tập',
+  [JobType.FULL_TIME]: 'Full Time',
+  [JobType.PART_TIME]: 'Part Time',
+  [JobType.CONTRACT]: 'Contract',
+  [JobType.INTERNSHIP]: 'Internship',
   [JobType.FREELANCE]: 'Freelance'
 } as const
 
 export const EXPERIENCE_LEVEL_LABELS = {
-  [ExperienceLevel.ENTRY]: 'Mới ra trường',
-  [ExperienceLevel.MID]: 'Trung cấp (2-5 năm)',
-  [ExperienceLevel.SENIOR]: 'Cao cấp (5+ năm)',
-  [ExperienceLevel.LEAD]: 'Trưởng nhóm',
-  [ExperienceLevel.EXECUTIVE]: 'Điều hành'
+  [ExperienceLevel.ENTRY]: 'Entry Level',
+  [ExperienceLevel.MID]: 'Mid Level (2-5 years)',
+  [ExperienceLevel.SENIOR]: 'Senior Level (5+ years)',
+  [ExperienceLevel.LEAD]: 'Team Lead',
+  [ExperienceLevel.EXECUTIVE]: 'Executive'
 } as const
 
 export const APPLICATION_STATUS_LABELS = {
-  [ApplicationStatus.PENDING]: 'Chờ xử lý',
-  [ApplicationStatus.REVIEWING]: 'Đang xem xét',
-  [ApplicationStatus.SHORTLISTED]: 'Được chọn',
-  [ApplicationStatus.INTERVIEW_SCHEDULED]: 'Lịch phỏng vấn',
-  [ApplicationStatus.INTERVIEWED]: 'Đã phỏng vấn',
-  [ApplicationStatus.OFFERED]: 'Được tuyển',
-  [ApplicationStatus.ACCEPTED]: 'Chấp nhận',
-  [ApplicationStatus.REJECTED]: 'Từ chối',
-  [ApplicationStatus.WITHDRAWN]: 'Đã rút'
+  [ApplicationStatus.PENDING]: 'Pending',
+  [ApplicationStatus.REVIEWING]: 'Under Review',
+  [ApplicationStatus.SHORTLISTED]: 'Shortlisted',
+  [ApplicationStatus.INTERVIEW_SCHEDULED]: 'Interview Scheduled',
+  [ApplicationStatus.INTERVIEWED]: 'Interviewed',
+  [ApplicationStatus.OFFERED]: 'Offered',
+  [ApplicationStatus.ACCEPTED]: 'Accepted',
+  [ApplicationStatus.REJECTED]: 'Rejected',
+  [ApplicationStatus.WITHDRAWN]: 'Withdrawn'
 } as const
 
 export const USER_ROLE_LABELS = {
   [UserRole.SUPER_ADMIN]: 'Super Admin',
-  [UserRole.ADMIN]: 'Quản trị viên',
-  [UserRole.EMPLOYER]: 'Nhà tuyển dụng',
-  [UserRole.CANDIDATE]: 'Ứng viên',
-  [UserRole.HR_MANAGER]: 'Quản lý HR',
-  [UserRole.RECRUITER]: 'Chuyên viên tuyển dụng'
+  [UserRole.ADMIN]: 'Administrator',
+  [UserRole.EMPLOYER]: 'Employer',
+  [UserRole.CANDIDATE]: 'Job Seeker',
+  [UserRole.HR_MANAGER]: 'HR Manager',
+  [UserRole.RECRUITER]: 'Recruiter'
 } as const
 
 export const COMPANY_SIZE_LABELS = {
-  [CompanySize.STARTUP]: '1-10 nhân viên',
-  [CompanySize.SMALL]: '11-50 nhân viên',
-  [CompanySize.MEDIUM]: '51-200 nhân viên',
-  [CompanySize.LARGE]: '201-500 nhân viên',
-  [CompanySize.ENTERPRISE]: '500+ nhân viên'
+  [CompanySize.STARTUP]: '1-10 employees',
+  [CompanySize.SMALL]: '11-50 employees',
+  [CompanySize.MEDIUM]: '51-200 employees',
+  [CompanySize.LARGE]: '201-500 employees',
+  [CompanySize.ENTERPRISE]: '500+ employees'
 } as const
 
 export const SALARY_TYPE_LABELS = {
-  [SalaryType.HOURLY]: 'Theo giờ',
-  [SalaryType.MONTHLY]: 'Theo tháng',
-  [SalaryType.YEARLY]: 'Theo năm'
+  [SalaryType.HOURLY]: 'Per Hour',
+  [SalaryType.MONTHLY]: 'Per Month',
+  [SalaryType.YEARLY]: 'Per Year'
 } as const
 
 export const SKILL_LEVEL_LABELS = {
-  [SkillLevel.BASIC]: 'Cơ bản',
-  [SkillLevel.INTERMEDIATE]: 'Trung cấp',
-  [SkillLevel.ADVANCED]: 'Cao cấp',
-  [SkillLevel.EXPERT]: 'Chuyên gia'
+  [SkillLevel.BASIC]: 'Basic',
+  [SkillLevel.INTERMEDIATE]: 'Intermediate',
+  [SkillLevel.ADVANCED]: 'Advanced',
+  [SkillLevel.EXPERT]: 'Expert'
 } as const
 
 export const INTERVIEW_TYPE_LABELS = {
-  [InterviewType.PHONE]: 'Điện thoại',
-  [InterviewType.VIDEO]: 'Video call',
-  [InterviewType.IN_PERSON]: 'Trực tiếp',
-  [InterviewType.ONLINE_TEST]: 'Test online'
+  [InterviewType.PHONE]: 'Phone Call',
+  [InterviewType.VIDEO]: 'Video Call',
+  [InterviewType.IN_PERSON]: 'In Person',
+  [InterviewType.ONLINE_TEST]: 'Online Test'
 } as const
 
 export const GENDER_LABELS = {
-  [Gender.MALE]: 'Nam',
-  [Gender.FEMALE]: 'Nữ',
-  [Gender.OTHER]: 'Khác'
+  [Gender.MALE]: 'Male',
+  [Gender.FEMALE]: 'Female',
+  [Gender.OTHER]: 'Other'
 } as const
 
 // Color mappings for status
 export const APPLICATION_STATUS_COLORS = {
-  [ApplicationStatus.PENDING]: 'bg-yellow-100 text-yellow-800',
-  [ApplicationStatus.REVIEWING]: 'bg-blue-100 text-blue-800',
-  [ApplicationStatus.SHORTLISTED]: 'bg-purple-100 text-purple-800',
-  [ApplicationStatus.INTERVIEW_SCHEDULED]: 'bg-indigo-100 text-indigo-800',
-  [ApplicationStatus.INTERVIEWED]: 'bg-cyan-100 text-cyan-800',
-  [ApplicationStatus.OFFERED]: 'bg-green-100 text-green-800',
-  [ApplicationStatus.ACCEPTED]: 'bg-emerald-100 text-emerald-800',
-  [ApplicationStatus.REJECTED]: 'bg-red-100 text-red-800',
-  [ApplicationStatus.WITHDRAWN]: 'bg-gray-100 text-gray-800'
+  [ApplicationStatus.PENDING]: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-300',
+  [ApplicationStatus.REVIEWING]: 'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-300',
+  [ApplicationStatus.SHORTLISTED]: 'bg-purple-100 text-purple-800 dark:bg-purple-900/20 dark:text-purple-300',
+  [ApplicationStatus.INTERVIEW_SCHEDULED]: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-300',
+  [ApplicationStatus.INTERVIEWED]: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900/20 dark:text-cyan-300',
+  [ApplicationStatus.OFFERED]: 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300',
+  [ApplicationStatus.ACCEPTED]: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/20 dark:text-emerald-300',
+  [ApplicationStatus.REJECTED]: 'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-300',
+  [ApplicationStatus.WITHDRAWN]: 'bg-gray-100 text-gray-800 dark:bg-gray-800/20 dark:text-gray-300'
 } as const
 
-// Rest of constants remain the same...
 export const VALIDATION_RULES = {
   PASSWORD_MIN_LENGTH: 8,
   PASSWORD_REGEX: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]/,
@@ -222,6 +221,7 @@ export const ROUTES = {
   JOB_DETAIL: '/jobs/:id',
   COMPANIES: '/companies',
   COMPANY_DETAIL: '/companies/:id',
+  CANDIDATES: '/candidates',
   
   CANDIDATE: {
     DASHBOARD: '/candidate/dashboard',
@@ -254,43 +254,43 @@ export const ROUTES = {
 }
 
 export const ERROR_MESSAGES = {
-  REQUIRED_FIELD: 'Trường này là bắt buộc',
-  INVALID_EMAIL: 'Email không hợp lệ',
-  INVALID_PHONE: 'Số điện thoại không hợp lệ',
-  PASSWORD_TOO_SHORT: `Mật khẩu phải có ít nhất ${VALIDATION_RULES.PASSWORD_MIN_LENGTH} ký tự`,
-  PASSWORD_TOO_WEAK: 'Mật khẩu phải chứa ít nhất 1 chữ hoa, 1 chữ thường, 1 số và 1 ký tự đặc biệt',
-  PASSWORD_NOT_MATCH: 'Mật khẩu xác nhận không khớp',
-  FILE_TOO_LARGE: 'File quá lớn. Kích thước tối đa 5MB',
-  INVALID_FILE_TYPE: 'Loại file không được hỗ trợ',
-  NETWORK_ERROR: 'Lỗi kết nối mạng',
-  UNAUTHORIZED: 'Bạn không có quyền truy cập',
-  FORBIDDEN: 'Truy cập bị từ chối',
-  NOT_FOUND: 'Không tìm thấy dữ liệu',
-  SERVER_ERROR: 'Lỗi server. Vui lòng thử lại sau'
+  REQUIRED_FIELD: 'This field is required',
+  INVALID_EMAIL: 'Please enter a valid email address',
+  INVALID_PHONE: 'Please enter a valid phone number',
+  PASSWORD_TOO_SHORT: `Password must be at least ${VALIDATION_RULES.PASSWORD_MIN_LENGTH} characters`,
+  PASSWORD_TOO_WEAK: 'Password must contain at least 1 uppercase, 1 lowercase, 1 number and 1 special character',
+  PASSWORD_NOT_MATCH: 'Passwords do not match',
+  FILE_TOO_LARGE: 'File is too large. Maximum size is 5MB',
+  INVALID_FILE_TYPE: 'File type is not supported',
+  NETWORK_ERROR: 'Network connection error',
+  UNAUTHORIZED: 'You are not authorized to access this resource',
+  FORBIDDEN: 'Access denied',
+  NOT_FOUND: 'Resource not found',
+  SERVER_ERROR: 'Server error. Please try again later'
 }
 
 export const SUCCESS_MESSAGES = {
-  LOGIN_SUCCESS: 'Đăng nhập thành công',
-  REGISTER_SUCCESS: 'Đăng ký thành công',
-  PROFILE_UPDATED: 'Cập nhật hồ sơ thành công',
-  PASSWORD_CHANGED: 'Đổi mật khẩu thành công',
-  APPLICATION_SUBMITTED: 'Nộp đơn ứng tuyển thành công',
-  APPLICATION_WITHDRAWN: 'Rút đơn ứng tuyển thành công',
-  JOB_CREATED: 'Tạo tin tuyển dụng thành công',
-  JOB_UPDATED: 'Cập nhật tin tuyển dụng thành công',
-  JOB_DELETED: 'Xóa tin tuyển dụng thành công',
-  FILE_UPLOADED: 'Tải file lên thành công',
-  INTERVIEW_SCHEDULED: 'Lên lịch phỏng vấn thành công',
-  INTERVIEW_CANCELLED: 'Hủy lịch phỏng vấn thành công'
+  LOGIN_SUCCESS: 'Successfully signed in',
+  REGISTER_SUCCESS: 'Account created successfully',
+  PROFILE_UPDATED: 'Profile updated successfully',
+  PASSWORD_CHANGED: 'Password changed successfully',
+  APPLICATION_SUBMITTED: 'Application submitted successfully',
+  APPLICATION_WITHDRAWN: 'Application withdrawn successfully',
+  JOB_CREATED: 'Job posting created successfully',
+  JOB_UPDATED: 'Job posting updated successfully',
+  JOB_DELETED: 'Job posting deleted successfully',
+  FILE_UPLOADED: 'File uploaded successfully',
+  INTERVIEW_SCHEDULED: 'Interview scheduled successfully',
+  INTERVIEW_CANCELLED: 'Interview cancelled successfully'
 }
 
 export const DEFAULT_VALUES = {
   PAGINATION_SIZE: 10,
   DEBOUNCE_DELAY: 300,
-  SALARY_CURRENCY: 'VND',
+  SALARY_CURRENCY: 'USD',
   DEFAULT_AVATAR: '/images/default-avatar.png',
   DEFAULT_COMPANY_LOGO: '/images/default-company-logo.png',
-  DEFAULT_LOCATION: 'Hà Nội, Việt Nam'
+  DEFAULT_LOCATION: 'Remote'
 }
 
 export const FEATURES = {
@@ -312,6 +312,35 @@ export const THEMES = {
   LIGHT: 'light',
   DARK: 'dark',
   SYSTEM: 'system'
+}
+
+// Job search filters
+export const JOB_FILTERS = {
+  SALARY_RANGES: [
+    { label: 'Any', value: '' },
+    { label: '$0 - $50k', value: '0-50000' },
+    { label: '$50k - $100k', value: '50000-100000' },
+    { label: '$100k - $150k', value: '100000-150000' },
+    { label: '$150k+', value: '150000-999999' }
+  ],
+  LOCATIONS: [
+    'Remote',
+    'New York, NY',
+    'San Francisco, CA',
+    'Los Angeles, CA',
+    'Chicago, IL',
+    'Austin, TX',
+    'Seattle, WA',
+    'Boston, MA'
+  ],
+  COMPANY_TYPES: [
+    'Startup',
+    'Mid-size company',
+    'Large corporation',
+    'Non-profit',
+    'Government',
+    'Agency'
+  ]
 }
 
 // Re-export enums for external use
